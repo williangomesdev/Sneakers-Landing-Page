@@ -1,0 +1,60 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: -31rem;
+  height: 100%;
+  width: 30rem;
+  background: $red;
+  color: $white;
+  padding: 2rem;
+  z-index: 1000;
+
+  .logo {
+    font-size: 2.5rem;
+    color: $white;
+    font-weight: bolder;
+  }
+
+  .navbar {
+    padding: 30% 0;
+
+    a {
+      display: block;
+      margin: 2rem 0;
+      font-size: 2rem;
+      color: $white;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+      }
+    }
+  }
+
+  .share {
+    text-align: center;
+
+    a {
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      font-size: 2rem;
+      color: $black;
+      background: $white;
+      margin: 0 0.3rem;
+
+      &:hover {
+        background: $black;
+        color: white;
+      }
+    }
+  }
+
+  .credit {
+    text-align: center;
+    font-size: 2rem;
+    color: $white;
+    margin-top: 3rem;
+    line-height: 1.5;
+  }
+}

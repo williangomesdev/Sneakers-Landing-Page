@@ -7,4 +7,94 @@
   border: none;
   transition: all 0.2s linear;
   font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #ed2d34;
+}
+
+body {
+  background: url(../assets/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#menu-btn {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 5rem;
+  height: 5rem;
+  background: #ed2d34;
+  color: #fff;
+  line-height: 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1100;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: -31rem;
+  height: 100%;
+  width: 30rem;
+  background: #ed2d34;
+  color: #fff;
+  padding: 2rem;
+  z-index: 1000;
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+}
+.header .navbar {
+  padding: 30% 0;
+}
+.header .navbar a {
+  display: block;
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: #fff;
+}
+.header .navbar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+.header .share {
+  text-align: center;
+}
+.header .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #444;
+  background: #fff;
+  margin: 0 0.3rem;
+}
+.header .share a:hover {
+  background: #444;
+  color: white;
+}
+.header .credit {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 3rem;
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */
