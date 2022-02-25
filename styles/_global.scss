@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+  font-family: "Montserrat", sans-serif;
+}
+
+$red: #ed2d34;
+$black: #444;
+$white: #fff;
+$light-color: #666;
+$border: 0.2rem solid $black;
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+@mixin flex($align) {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+@mixin titleText($titleSize) {
+  font-size: $titleSize;
+  text-transform: capitalize;
+  color: $black;
+}
+
+@mixin graphText($graphSize) {
+  font-size: $graphSize;
+  line-height: 2;
+  color: $light-color;
+}
