@@ -64,6 +64,10 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  &.active{
+    padding-left: 0;
+  }
 }
 
 #menu-btn {
@@ -79,4 +83,10 @@ body {
   cursor: pointer;
   z-index: 1100;
   text-align: center;
+  transition-duration: 0.2s;
+
+  &.fa-times{
+    top: 1rem;
+    left: 25rem;
+  }
 }
