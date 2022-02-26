@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
-
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- css file -->
     <link rel="stylesheet" href="./styles/style.css">
     <title>Ténis | Landing Page</title>
@@ -54,7 +55,53 @@
 
     </section>
     <!-- banner -->
+    <section class="products" id="products">
+        <h1 class="heading">Nossos <span>produtos</span></h1>
+        <div class=" swiper products-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" data-product="product-1">
+                    <img src="./assets/images/product-img1.jpg" alt="Products">
+                    <h3>Nike airmax</h3>
+                    <div class="btn">Mais detalhes</div>
+                </div>
+
+                <div class="swiper-slide slide" data-product="product-2">
+                    <img src="./assets/images/product-img2.jpg" alt="Products">
+                    <h3>Nike airmax</h3>
+                    <div class="btn">Mais detalhes</div>
+                </div>
+
+                <div class="swiper-slide slide" data-product="product-3">
+                    <img src="./assets/images/product-img3.jpg" alt="Products">
+                    <h3>Nike airmax</h3>
+                    <div class="btn">Mais detalhes</div>
+                </div>
+
+                <div class="swiper-slide slide" data-product="product-4">
+                    <img src="./assets/images/product-img4.jpg" alt="Products">
+                    <h3>Nike airmax</h3>
+                    <div class="btn">Mais detalhes</div>
+                </div>
+
+                <div class="swiper-slide slide" data-product="product-5">
+                    <img src="./assets/images/product-img5.jpg" alt="Products">
+                    <h3>Nike airmax</h3>
+                    <div class="btn">Mais detalhes</div>
+                </div>
+
+                <div class="swiper-slide slide" data-product="product-6">
+                    <img src="./assets/images/product-img6.jpg" alt="Products">
+                    <h3>Nike airmax</h3>
+                    <div class="btn">Mais detalhes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- swiper link -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 
 </html>

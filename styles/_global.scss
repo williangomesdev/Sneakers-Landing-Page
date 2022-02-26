@@ -103,10 +103,21 @@ section {
   color: $black;
   background: none;
   font-size: 2rem;
+  text-transform: capitalize;
 
   &:hover {
     color: $white;
     background: $red;
     border: $red;
+  }
+}
+
+.heading {
+  text-align: center;
+  @include titleText(4rem);
+  margin-bottom: 3rem;
+
+  span {
+    color: $red;
   }
 }
