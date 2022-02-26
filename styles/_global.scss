@@ -23,7 +23,7 @@ $border: 0.2rem solid $black;
 
 @mixin flex($align) {
   display: flex;
-  align-items: center;
+  align-items: $align;
   flex-wrap: wrap;
   gap: 3rem;
 }
@@ -65,9 +65,12 @@ body {
   background-position: center;
   background-attachment: fixed;
 
-  &.active{
-    padding-left: 0;
+  &.active {
+    padding-left: 30rem;
   }
+}
+section {
+  padding: 5rem 9%;
 }
 
 #menu-btn {
@@ -85,8 +88,25 @@ body {
   text-align: center;
   transition-duration: 0.2s;
 
-  &.fa-times{
+  &.fa-times {
     top: 1rem;
     left: 25rem;
+  }
+}
+
+.btn {
+  motion-path: 1rem;
+  display: inline-block;
+  border-radius: 5rem;
+  padding: 1.2rem 3rem;
+  border: $border;
+  color: $black;
+  background: none;
+  font-size: 2rem;
+
+  &:hover {
+    color: $white;
+    background: $red;
+    border: $red;
   }
 }
