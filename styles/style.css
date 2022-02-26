@@ -202,6 +202,69 @@ section {
   opacity: 1;
 }
 
+.products-preview-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.products-preview-container .product-preview {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  background: #fff;
+  position: relative;
+  padding: 9%;
+}
+.products-preview-container .product-preview .fa-times {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #666;
+}
+.products-preview-container .product-preview .fa-times:hover {
+  color: #ed2d34;
+  transform: rotate(90deg);
+}
+.products-preview-container .product-preview .image {
+  flex: 1 1 40rem;
+}
+.products-preview-container .product-preview .image img {
+  width: 100%;
+}
+.products-preview-container .product-preview .content {
+  flex: 1 1 40rem;
+}
+.products-preview-container .product-preview .content h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.products-preview-container .product-preview .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  padding: 1rem 0;
+}
+.products-preview-container .product-preview .content .stars {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+.products-preview-container .product-preview .content .stars i {
+  color: #ed2d34;
+}
+.products-preview-container .product-preview .content .stars span {
+  color: #666;
+}
+
 @media (max-width: 1200px) {
   body.active {
     padding-left: 0;
