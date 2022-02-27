@@ -18,6 +18,24 @@
   }
 }
 
+@media (max-width: 768px) {
+  .service {
+    @include grid(25rem);
+  }
+
+  .contact {
+    .row {
+      display: inline-block;
+    }
+
+    .contact-info {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
@@ -25,5 +43,38 @@
 
   .banner .content h3 {
     font-size: 3rem;
+  }
+
+  .service {
+    @include grid(15rem);
+  }
+
+  .contact {
+    .row {
+      text-align: center;
+
+      .contact-info {
+        .icons {
+          flex-direction: column;
+
+          .info {
+            p {
+              @include graphText(2rem);
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+      .share {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 312px) {
+  .service {
+    display: flex;
+    flex-direction: column;
   }
 }

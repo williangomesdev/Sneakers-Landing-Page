@@ -72,7 +72,7 @@ section {
 .btn:hover {
   color: #fff;
   background: #ed2d34;
-  border: #ed2d34;
+  border-color: #ed2d34;
 }
 
 .heading {
@@ -312,6 +312,79 @@ section {
   color: #444;
 }
 
+.contact .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.contact .row form {
+  flex: 1 1 40rem;
+  margin-bottom: 3rem;
+}
+.contact .row form .box {
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  border-bottom: 0.2rem solid #444;
+  width: 100%;
+}
+.contact .row form .box:focus {
+  border-color: #ed2d34;
+}
+.contact .row form textarea {
+  resize: none;
+  height: 15rem;
+}
+.contact .contact-info {
+  flex: 1 1 40rem;
+}
+.contact .contact-info h3 {
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.contact .contact-info .grapgh {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  padding: 1rem 0;
+}
+.contact .contact-info .icons {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.contact .contact-info .icons i {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  background: #ed2d34;
+  color: #fff;
+  text-align: center;
+}
+.contact .contact-info .icons .info p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  padding: 1rem 0;
+}
+.contact .share {
+  padding-top: 2rem;
+}
+.contact .share a {
+  font-size: 3rem;
+  margin-right: 1rem;
+  color: #666;
+}
+.contact .share a:hover {
+  color: #ed2d34;
+}
+
 @media (max-width: 1200px) {
   body.active {
     padding-left: 0;
@@ -330,6 +403,20 @@ section {
     padding: 3rem 2rem;
   }
 }
+@media (max-width: 768px) {
+  .service {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+  }
+
+  .contact .row {
+    display: inline-block;
+  }
+  .contact .contact-info h3 {
+    text-align: center;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 50%;
@@ -337,5 +424,34 @@ section {
 
   .banner .content h3 {
     font-size: 3rem;
+  }
+
+  .service {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+  }
+
+  .contact .row {
+    text-align: center;
+  }
+  .contact .row .contact-info .icons {
+    flex-direction: column;
+  }
+  .contact .row .contact-info .icons .info p {
+    font-size: 2rem;
+    line-height: 2;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 1.5;
+  }
+  .contact .row .share {
+    text-align: center;
+  }
+}
+@media (max-width: 312px) {
+  .service {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
