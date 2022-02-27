@@ -1,3 +1,4 @@
+/* products */
 var swiper = new Swiper(".products-slider", {
   loop: true,
   spaceBetween: 20,
@@ -15,8 +16,6 @@ var swiper = new Swiper(".products-slider", {
     },
   },
 });
-
-
 
 //slider produtos
 let productPreviewContainer = document.querySelector(".products-preview-container");
@@ -48,3 +47,24 @@ closeButtonSelect.forEach((close) => {
     productPreviewContainer.style.display = "none";
   };
 });
+/* products */
+
+/* reviews */
+var swiper = new Swiper(".reviews-slide", {
+  loop: true,
+  spaceBetween: 20,
+  grabCursor: true,
+  centeredSlides: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
+/* reviews */
