@@ -1,0 +1,24 @@
+.reviews {
+  .slide {
+    text-align: center;
+    padding: 2rem;
+
+    i {
+      font-size: 4rem;
+      color: $light-color;
+    }
+    p {
+      @include graphText(2rem);
+    }
+
+    img {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      @include titleText(1.7rem);
+    }
+  }
+}
